@@ -1,0 +1,16 @@
+Package: shinytangle
+Title: Interactive Inline TangleJS Style Elements for Shiny Applications
+Version: 0.0.0.9000
+Authors@R: 
+    person("James Joseph", "Balamuta", , "james.balamuta@gmail.com", role = c("aut", "cre"))
+Description: Provides a set of functions for creating inline numeric inputs and 
+    outputs in Shiny applications with drag-to-change functionality inspired by 
+    Tangle.js.
+URL: https://github.com/coatless-rpkg/shinytangle, https://r-pkg.thecoatlessprofessor.com/shinytangle/
+BugReports: https://github.com/coatless-rpkg/shinytangle/issues
+License: AGPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    shiny
