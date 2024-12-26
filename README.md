@@ -32,6 +32,7 @@ library(shiny)
 library(shinytangle)
 
 ui <- fluidPage(
+  titlePanel("shinytangle: Demo Inline"),
   p(
     "When you have", 
     inlineNumericInput("amount", 5, min = 0, max = 10), 
