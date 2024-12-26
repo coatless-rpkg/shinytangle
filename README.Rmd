@@ -1,33 +1,44 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # shinytangle
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/coatless-rpkg/shinytangle/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/coatless-rpkg/shinytangle/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-shinytangle provides inline interactive widgets for Shiny applications,
-allowing you to embed interactive numeric inputs and outputs directly
-within text. This makes it easy to create dynamic, interactive
-narratives and explanations where users can adjust values and see
-results update in real-time.
+shinytangle provides inline interactive widgets for Shiny applications, allowing
+you to embed interactive numeric inputs and outputs directly within text. This 
+makes it easy to create dynamic, interactive narratives and explanations where 
+users can adjust values and see results update in real-time.
 
 ## Installation
 
 You can install the development version of shinytangle from GitHub:
 
-``` r
+```r
 # install.packages("remotes")
 remotes::install_github("coatless-rpkg/shinytangle")
 ```
 
 ## Usage
 
-Here’s an example of how to use shinytangle:
+Here's an example of how to use shinytangle:
 
-``` r
+```{r}
+#| eval: false
 library(shiny)
 library(shinytangle)
 
@@ -48,3 +59,4 @@ server <- function(input, output) {
 
 shinyApp(ui, server)
 ```
+
