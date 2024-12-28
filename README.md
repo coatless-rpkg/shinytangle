@@ -49,3 +49,22 @@ server <- function(input, output) {
 
 shinyApp(ui, server)
 ```
+
+![](https://github.com/user-attachments/assets/c96aa063-e38c-4f80-ab88-c0a1fe090525)
+
+After installing the package, you can explore more examples of
+`shinytangle` by running:
+
+``` r
+# Display a triangle and adjust its size with a,b,c sliders
+shiny::runExample("triangle-demo", package = "shinytangle")
+
+# Multi-text statement example
+shiny::runExample("text-statement-demo", package = "shinytangle")
+
+# Try out the README example
+shiny::runExample("readme-inline-demo", package = "shinytangle")
+
+# See a list of all examples:
+system.file("examples-shiny", package="shinytangle")
+```
